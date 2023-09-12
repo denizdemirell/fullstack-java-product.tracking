@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <script type="text/javascript" src ="update.js"></script>
+</head>
+<body>
+
+	
+    <p  id="sonuc" style="text-align: center; color: brown; font-weight: bold;font-size:28px">Ürün Güncelleme</p>
+
+	<div id="metin" >		
+		
+		<h2>Ürünü Güncelle</h2>
+        <label for="id">ID:</label>
+        <input name="id" id="id" disabled>
+
+        <label for="urun_adi">Ürün Adı:</label>
+        <input name="urun_adi" id="urun_adi">
+
+        <label for="urun_kodu">Ürün Kodu:</label>
+        <input name="urun_kodu" id="urun_kodu">
+
+        <label for="fiyat">Fiyatı:</label>
+        <input name="fiyat" id="fiyat">
+
+        <label for="hammadde">Hammadde:</label>
+        <input name="hammadde" id="hammadde">
+
+
+        <label for="kusurlu_mu">Kusurlu mu:</label>
+        <select name="kusurlu_mu" id="kusurlu_mu">
+            <option value="true">Evet</option>
+             <option value="false">Hayır</option>
+        </select>
+
+        <label for="Fabrika">sirket: </label>
+        <select id="myDropdown"></select>
+        <br><br>
+        <button type="submit" onclick="putService()">Güncelle</i></button>
+		<br>
+		
+	</div>
+    
+    
+    
+	
+
+	
+</body>
+
+</html>

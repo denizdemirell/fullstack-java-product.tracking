@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="deniz.js"></script>
+    <title>Demirel Kağıt</title>
+</head>
+<body>
+    <header>
+        <h1>Kağıt Takip</h1>
+        <button id="yenikayit" type="submit" onclick="postService()">Yeni Kayıt</button>
+    </header>
+    <div id="metin">		
+		
+		<br>
+		<label  for="ad">Adı:   </label>
+		<input  name="ad" id="ad">
+    
+    <button id="sorgula" type="submit" onclick="getServiceForTable()" >Ara/Listele</button>
+
+    <br>
+		
+	</div>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Ürün Adı</th>
+                    <th>Ürün Kodu</th>
+                    <th>Fiyatı</th>
+                    <th>Hammadde</th>
+                    <th>Kusurlu mu</th>
+					<th>Fabrika Ülkesi</th>
+                    <th>Fabrika Adı</th>
+                    <th colspan="2">İşlemler</th> 
+					
+                </tr>
+            </thead>
+            <tbody id="urunList">
+                <!-- Ürünler burada listelenecek -->
+            </tbody>
+        </table>
+    </div>   
+
+</body>
+
+</html>
